@@ -1,6 +1,12 @@
 <?php
 
 	// ************************** //
+	//    zainicjowanie sesji     //
+	// ************************** //
+
+	session_start();
+
+	// ************************** //
 	//       zmienne define       //
 	// ************************** //
 
@@ -9,7 +15,6 @@
 	define('CORE_FOLDER','core/');
 	define('APP_FOLDER', 'app/');
 	define('ADMIN_FOLDER', APP_FOLDER.'admin/');
-	define('NAME_ADMINISTRATOR','admin');
 
 	// ************************** //
 	//   dołączane pliki główne   //
@@ -20,3 +25,4 @@
 	require_once(CORE_FOLDER.'Controller.php');
 
 	require_once(CORE_FOLDER.'Router.php');
+	require_once(CORE_FOLDER.'Errors.php');

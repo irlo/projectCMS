@@ -12,4 +12,8 @@ class View {
 		require_once(APP_ROOT_FOLDER.'views/'.$path.'.php');
 	}
 
+	public function renderFatalError(){
+		require_once(APP_FOLDER.'views/fatalError/index.php');
+	}
+
 }

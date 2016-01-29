@@ -2,17 +2,16 @@
 
 class pages extends Controller {
 
-	public function __construct($name){
+	public function __construct(){
 
-		parent::__construct($name);
+		parent::__construct();
 		var_dump('PAGES_CONTROLLER');
-		$this->init();
 
 	}
 
 	public function index(){
 
-		
+		echo 'metoda index';
 		
 	}
 
